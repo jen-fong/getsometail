@@ -1,0 +1,190 @@
+html {
+	height: 100%;
+	background: url('girlNextDoorBackground.png') no-repeat center center;
+	background-size: cover;
+	
+
+}
+
+body{
+	background: none;
+}
+
+.logo{
+	max-width: 25%;
+	margin-top: 22px;
+	margin-left: 20px;
+
+}
+
+.navbar-form {
+	margin-top: 20px;
+	padding-top: 20px;
+}
+
+h3{
+	font-family: 'Lobster', cursive;
+	color: white;
+	float: right;
+	letter-spacing: 1px;
+
+}
+
+h6{
+	color: white;
+	background-color: #ea1316;
+	display: inline-block;
+	padding: 5px;
+}
+
+.col-md-2 {
+    width: 11.66666667%;
+    float: right;
+    margin-left: -20px;
+}
+
+.kingCharles, .beagle, .yorkshireTerrier, .goldenRetriever{
+	width: 100%;
+}
+
+.span1 {
+	font-family: 'Lobster', cursive;
+	color: white;
+	letter-spacing: 1px;
+	font-size: 50px;
+	text-shadow: 2px 2px #000;
+	color: red;
+}
+
+
+p{
+	color: white;
+	font-size: 18px;
+	margin-left: 50px;
+
+}
+
+.bottom{
+	margin-top: 120px;
+}
+
+.navbar-right {
+	margin-right: 20px;
+}
+
+span{
+	color: white;
+}
+
+#title{
+	margin-left: 50px;
+}
+#apiDiv {
+	width: 500px;
+    height:500px;
+    overflow-y: auto;
+    white-space: nowrap;
+}
+.dogDiv > a > img {
+	margin-left: 50px;
+	border: 1px solid #c9c9c9;
+    border-radius: 4px;
+    padding: 5px;
+    text-align: center;
+}
+.dogDiv > a > img:hover {
+	border: solid 1px #CCC;
+    -moz-box-shadow: 1px 1px 5px #ea1316;
+    -webkit-box-shadow: 1px 1px 5px #ea1316;
+    box-shadow: 1px 1px 5px #ea1316;
+}
+.dogDiv {
+	background: rgba(0, 0, 0, 0.7);
+	display: inline-block;
+    vertical-align: middle;
+    white-space: normal;
+    height: 400px;
+    overflow: auto;
+    margin-right: 20px;
+    color: #ffffff;
+	font-size: 18px;
+    display: none;
+}
+.dogDiv > p > a {
+	color: #ffffff;
+	font-size: 18px;
+	line-height: 10px;
+}
+.dogDiv > p {
+	margin-left: 20px;
+}
+#map-canvas {
+	width: 350px; 
+	height: 300px;
+}
+.locateDog {
+	border: none;
+    text-align: center;
+    background: #ea1316;
+    text-transform: uppercase;
+    margin: 10px;
+    color: #ffffff;
+    width: 120px;
+    height: 25px;
+    line-height: 10px;
+    font-size: 12px;
+}
+h4{
+	font-family: 'Lobster', cursive;
+	color: white;
+	letter-spacing: 1px;
+	font-size: 30px;
+	text-align: center;
+}
+.dogDivActive {
+	display: block;
+}
+.next {
+	float: right;
+	display: inline-block;
+	border: none;
+    text-align: center;
+    background: #ea1316;
+    text-transform: uppercase;
+    color: #ffffff;
+    width: 120px;
+    height: 25px;
+    line-height: 5px;
+    margin: 10px;
+    font-size: 12px;
+}
+.prev{
+	float: left;
+	display: inline-block;
+	border: none;
+    text-align: center;
+    background: #ea1316;
+    text-transform: uppercase;
+    color: #ffffff;
+    width: 120px;
+    height: 25px;
+    line-height: 5px;
+    margin: 10px;
+    font-size: 12px;
+}
+.align-right > h3 {
+	float: none;
+	line-height: 7px;
+}
+input {
+	max-width: 70%;
+	margin-left: 50px;
+	margin-top: 30px;
+}
+.container {
+	margin-right: 75px;
+	margin-top: -20px;
+}
+.red {
+  color: red;
+}

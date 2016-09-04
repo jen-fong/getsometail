@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{> page/title}}</title>
+	<link rel="stylesheet" type="text/css" href="../assets/css/reset.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../assets/css/girl.css">
+	<link rel="stylesheet" type="text/css" href="{{> page/css}}">
+	<script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+	<script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+	<script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYNZtnyYPdGG29PTxUPcZoFMioiKJbfV8">
+    </script>
+    <script src="../assets/javascript/jquery.flexslider.js"></script>  
+    <link rel="stylesheet" href="../assets/css/flexslider.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="../assets/css/edit.css" type="text/css" media="screen" />
+
+</head>
+<body>
+	<div class="row">
+		<div class="col-lg-12 topBar">
+			<a href="/">
+            	<img class= "logo" src="../assets/images/other/logo.png" alt="logo">
+      		</a>
+      	</div>	
+	</div>
+	<div class="container">
+    	<div class="row text-center"> 
+    		<div class="col-lg-4 col-lg-offset-8">
+    			<div class="align-right">
+    				<h3 id="letsDoThis" class="red"></h3>
+    				<h3>Enter Your Zip Code &</h3>
+    				<h3>Choose Your Wingman</h3>
+    				<input type="text" class="form-control" id="location" placeholder="Zip Code"><br>
+    			</div>
+    		</div>
+    	</div>
+
+      	{{{ body }}}
+
+		<div id="apiDiv" class="col-xs-4"></div>
+		<div id="map-canvas" class="col-xs-4"></div>
+	</div>
+	<script type="text/javascript" src="../assets/javascript/dogapp.js"></script>
+	<div id="main" role="main">
+        <section class="slider">
+        <div class="row"> 
+            <div class="col-xs-12">
+                <div id="flexBottom"> 
+                    <div class="flexslider carousel">
+                        <ul class="slides">
+                            <li>
+                                <a href="/girls/beachBunny"><img src="../girlpics/beachBunny.png" /></a>
+                            </li>
+                            <li>
+                                <a href="/girls/blondeBombshell"><img src="../girlpics/blondeBombshell.png" /></a>
+                            </li>
+                           <li>
+                                <a href="/girls/bootylicious"><img src="../girlpics/bootylicious.jpg" /></a>
+                            </li>
+                            <li>
+                                <a href="/girls/daddysGirl"><img src="../girlpics/daddysGirl.png" /></a>
+                            </li>
+                            <li>
+                                <a href="/girls/fierceCowgirl"><img src="../girlpics/fierceCowgirl.png" /></a>
+                            </li>
+                            <li>
+                                <a href="/girls/fitnessChic"><img src="../girlpics/fitnessChic.png" /></a>
+                            </li>
+                            <li>
+                                <a href="/girls/girlNextDoor"><img src="../girlpics/girlNextDoor.jpg" /></a>
+                            </li>
+                          
+                            <li>
+                                <a href="/girls/madisonAve"><img src="../girlpics/madisonAve.jpg" /></a>
+                            </li>
+                            <li>
+                                <a href="/girls/naturalBeauty"><img src="../girlpics/naturalBeauty.png" /></a>
+                            </li>                
+                            <li>
+                                <a href="/girls/sexyBrunette"><img src="../girlpics/sexyBrunette.png" /></a>
+                            </li>
+                            <li>
+                                <a href="/girls/tattooedBaby"><img src="../girlpics/tattooBaby.png" /></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+    </div>
+
+  <!-- jQuery FOR SLIDER-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+
+    <!-- FlexSlider -->
+    <script defer src="../assets/javascript/jquery.flexslider.js"></script>
+
+    <script type="text/javascript">
+        $(function(){
+          SyntaxHighlighter.all();
+        });
+        $(window).load(function(){
+            $('.flexslider').flexslider({
+                animation: "slide",
+                animationLoop: false,
+                itemWidth: 287,
+                itemMargin: 5,
+                pausePlay: true,
+                start: function(slider){
+                  $('body').removeClass('loading');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
