@@ -1,0 +1,11 @@
+.flexslider {
+	width: 1160px;
+	height: 217px;
+	margin-left: 80px;
+	/*margin-top: 60px;*/
+}
+
+#flexBottom{
+	margin-top: -100px;
+	background-color: red;
+}
