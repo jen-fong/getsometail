@@ -1,32 +1,3 @@
-// Initialize firebase
-var config = {
-    apiKey: "AIzaSyBBR9WdMXR9_XgDGc3Xr6KC088l_t6wJnk",
-    authDomain: "a-project-1d64c.firebaseapp.com",
-    databaseURL: "https://a-project-1d64c.firebaseio.com",
-    storageBucket: "a-project-1d64c.appspot.com",
-  };
-firebase.initializeApp(config);
-var dataRef = firebase.database();
-
-var name = "";
-// firebase will store user's name 
-$("#userInfo").on("click", function(e) {
-    e.preventDefault();
-    name = $('#nameInput').val();
-    console.log(name);
-    dataRef.ref().set({
-        name: name
-    });
-});
-dataRef.ref().on("value", function(snapshot) {
-    console.log('Hi ' + snapshot.val().name);
-    var dbVal = snapshot.val(); 
-    name = dbVal.name;
-    $("#userInput").html('Hi ' + dbVal.name + ". " + ' Which girl is your dream date with?');
-    $("#letsDoThis").html("Let's do this " + dbVal.name);
-}, function (errorObject) {
-    console.log("The read failed: " + errorObject.code);
-});
 // Set up variables and empty arrays for location data to be pushed into
 var shelter = [];
 var shelterInfo = [];
