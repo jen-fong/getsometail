@@ -83,6 +83,9 @@ span{
 	font-size: 18px;
 	display: none;
 }
+.modal, .modal-body, .modal-header, .modal-footer {
+	background: rgba(0, 0, 0, 0.7);
+}
 .dogDiv > p > a {
 	color: #ffffff;
 	font-size: 18px;
