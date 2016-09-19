@@ -1,9 +1,11 @@
 {{#each dogs }}
     <div class="col-md-2">
             <a href="#" class="img-circle">
-                <img class="dog" src="../assets/images/thumbnails/{{ image }}.png" data-breed={{ breed }} alt={{ breed }}>
+                <img src="../assets/images/thumbnails/{{ image }}.png" alt={{ breed }}>
                 <div class="caption text-center">
-                        <h6>{{ breed }}</h6>
+            
+            <button type="button" class="btn btn-primary-topNav hvr-float-shadow dog" data-breed={{ breed }} data-toggle="modal" data-target="#modal-2">{{ breed }}</button>
+        
                 </div>
             </a>
         </div>
