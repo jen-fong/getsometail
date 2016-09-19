@@ -9,8 +9,14 @@
     <link rel="stylesheet" type="text/css" href="../assets/css/girl.css">
 	<link rel="stylesheet" type="text/css" href="{{> page/css}}">
 	<script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYNZtnyYPdGG29PTxUPcZoFMioiKJbfV8"></script>   
+	<script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+	<script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYNZtnyYPdGG29PTxUPcZoFMioiKJbfV8">
+    </script>
+    <script src="../assets/javascript/jquery.flexslider.js"></script>  
+    <link rel="stylesheet" href="../assets/css/flexslider.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="../assets/css/edit.css" type="text/css" media="screen" />
+
 </head>
 <body>
 	<div class="row">
@@ -33,46 +39,83 @@
     	</div>
 
       	{{{ body }}}
+
+		<div id="apiDiv" class="col-xs-4"></div>
+		<div id="map-canvas" class="col-xs-4"></div>
 	</div>
-	
-    <div class="modal fade" id="modal-2">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h3 class="modal-title">Dogs</h3>
-                </div>
-                <div class="modal-body">
-                    <div id="apiDiv"></div>
-                </div>
-                <div class="modal-footer">
-                    <a href="" class="btn btn-default" data-dismiss="modal">Close</a>
+	<script type="text/javascript" src="../assets/javascript/dogapp.js"></script>
+	<div id="main" role="main">
+        <section class="slider">
+        <div class="row"> 
+            <div class="col-xs-12">
+                <div id="flexBottom"> 
+                    <div class="flexslider carousel">
+                        <ul class="slides">
+                            <li>
+                                <a href="/girls/beachBunny"><img src="../girlpics/beachBunny.png" /></a>
+                            </li>
+                            <li>
+                                <a href="/girls/blondeBombshell"><img src="../girlpics/blondeBombshell.png" /></a>
+                            </li>
+                           <li>
+                                <a href="/girls/bootylicious"><img src="../girlpics/bootylicious.jpg" /></a>
+                            </li>
+                            <li>
+                                <a href="/girls/daddysGirl"><img src="../girlpics/daddysGirl.png" /></a>
+                            </li>
+                            <li>
+                                <a href="/girls/fierceCowgirl"><img src="../girlpics/fierceCowgirl.png" /></a>
+                            </li>
+                            <li>
+                                <a href="/girls/fitnessChic"><img src="../girlpics/fitnessChic.png" /></a>
+                            </li>
+                            <li>
+                                <a href="/girls/girlNextDoor"><img src="../girlpics/girlNextDoor.jpg" /></a>
+                            </li>
+                          
+                            <li>
+                                <a href="/girls/madisonAve"><img src="../girlpics/madisonAve.jpg" /></a>
+                            </li>
+                            <li>
+                                <a href="/girls/naturalBeauty"><img src="../girlpics/naturalBeauty.png" /></a>
+                            </li>                
+                            <li>
+                                <a href="/girls/sexyBrunette"><img src="../girlpics/sexyBrunette.png" /></a>
+                            </li>
+                            <li>
+                                <a href="/girls/tattooedBaby"><img src="../girlpics/tattooBaby.png" /></a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
+        </section>
     </div>
 
-    <script type="text/javascript" src="../assets/javascript/dogapp.js"></script>
-	
-       
-  <ul class="pagination">
-    <li>
-      <a href="#" aria-label="Previous">
-        <span aria-hidden="true">&laquo;</span>
-      </a>
-    </li>
-    <li><a href="#">1</a></li>
-    <li><a href="#">2</a></li>
-    <li><a href="#">3</a></li>
-    <li><a href="#">4</a></li>
-    <li><a href="#">5</a></li>
-    <li>
-      <a href="#" aria-label="Next">
-        <span aria-hidden="true">&raquo;</span>
-      </a>
-    </li>
-  </ul>
-</nav>
-               
+  <!-- jQuery FOR SLIDER-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+
+    <!-- FlexSlider -->
+    <script defer src="../assets/javascript/jquery.flexslider.js"></script>
+
+    <script type="text/javascript">
+        $(function(){
+          SyntaxHighlighter.all();
+        });
+        $(window).load(function(){
+            $('.flexslider').flexslider({
+                animation: "slide",
+                animationLoop: false,
+                itemWidth: 287,
+                itemMargin: 5,
+                pausePlay: true,
+                start: function(slider){
+                  $('body').removeClass('loading');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
