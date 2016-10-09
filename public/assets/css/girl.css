@@ -52,10 +52,6 @@ span{
 #title{
 	margin-left: 50px;
 }
-#apiDiv {
-	overflow-y: auto;
-	white-space: nowrap;
-}
 .dogDiv > a > img {
 	margin-left: 50px;
 	border: 1px solid #c9c9c9;
@@ -74,8 +70,6 @@ span{
 	display: inline-block;
 	vertical-align: middle;
 	white-space: normal;
-	height: 400px;
-	overflow: auto;
 	margin-right: 20px;
 	color: #ffffff;
 	font-size: 18px;
