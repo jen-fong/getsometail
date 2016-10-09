@@ -1,6 +1,9 @@
 body{
 	background: none;
 }
+.push {
+	height: 125px;
+}
 .logo{
 	max-width: 25%;
 	margin-top: 22px;
