@@ -1,7 +1,8 @@
 
 html {
-    height: 100%;
+    height: 104%;
+	background-size: cover;
     background: url('tattooedBabyBackground.png') no-repeat center center;
-    background-size: cover;
     background-color: black;
+  
 }

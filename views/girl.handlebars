@@ -1,18 +1,23 @@
-{{#each dogs }}
-    <div class="col-md-2">
-            <a href="#" class="img-circle">
-                <img src="../assets/images/thumbnails/{{ image }}.png" alt={{ breed }}>
-                <div class="caption text-center">       
-                    <button type="button" class="btn btn-primary-topNav hvr-float-shadow dog" data-breed={{ breed }} data-toggle="modal" data-target="#modal-2">{{ breed }}</button>
-                </div>
-            </a>
+    <div class="row dogRow">
+        <div class="col-md-12 dogThumbnails">
+            {{#each dogs }}
+                <a href="#" class="img-circle dogCircle">
+                    <img class="img-responsive" src="../assets/images/thumbnails/{{ image }}.png" alt={{ breed }}>
+                    <div>       
+                        <button type="button" id="dogButton" class="btn btn-primary-topNav hvr-float-shadow dog" data-breed={{ breed }} data-toggle="modal" data-target="#modal-2">{{ breed }}</button>
+                    </div>
+                </a>
+            {{/each }}  
         </div>
-{{/each }}
-    </div>
-</div>    
+     </div>
+
+   
+
     <div class="row bottom"> 
-        <div class="col-xs-4">
-           <div id="title" class="span1">{{ girlHeading.heading1}} <span>{{ girlHeading.heading2 }}</span> {{girlHeading.heading3}}</div>
-            <p>{{ girl.description }}</p>
+        <div class="col-md-7 descriptionDiv">
+           <div id="title" class="span1">{{ girlHeading.heading1}} <span>{{ girlHeading.heading2 }}</span>  {{girlHeading.heading3}}
+                <p>{{ girl.description }}</p>
+            </div>
         </div>
+    </div>
 
