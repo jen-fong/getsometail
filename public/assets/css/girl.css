@@ -5,11 +5,19 @@ body{
 .topBar{
 	margin-top: 22px;
 }
+
+.close{
+	color: white;
+	opacity: initial;
+}
 .descriptionDiv{
 	padding-top: 40px;
     padding-right: 35px;
     padding-bottom: 20px;
     padding-left: 40px;
+}
+h3{
+	color: white;
 }
 
 .bottom{
@@ -160,8 +168,8 @@ h4{
 	line-height: 7px;
 }
 input {
-	max-width: 70%;
-	margin-left: 50px;
+	max-width: 44%;
+	margin-left: 28%;
 }
 .container {
 	
@@ -193,6 +201,8 @@ input {
 		font-size: 32px;
 		margin-left: 0;
 	}
+	p{
+		padding-right: 20px;
 }
 
 @media screen and (max-width: 640px){
@@ -243,6 +253,10 @@ input {
 	.bottom{
 	position: absolute;
  	bottom: 0px;
+	}
+
+	p{
+		padding-right: 10px;
 	}
 	
 
