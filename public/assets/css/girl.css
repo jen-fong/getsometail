@@ -1,23 +1,49 @@
 body{
 	background: none;
 }
-.push {
-	height: 125px;
-}
-.logo{
-	max-width: 25%;
+
+.topBar{
 	margin-top: 22px;
-	margin-left: 5px;
+}
+
+.close{
+	color: white;
+	opacity: initial;
+}
+.descriptionDiv{
+	padding-top: 40px;
+    padding-right: 35px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+}
+h3{
+	color: white;
+}
+
+.bottom{
+	position: absolute;
+ 	bottom: 37px;
+}
+
+.dogCircle{
+	margin-right: 15px;
+}
+
+.logo{
+	margin-top: 22px;
+	margin-left: 8%;
+
+
 }
 .navbar-form {
 	margin-top: 20px;
 	padding-top: 20px;
 }
-h3{
-	font-family: 'Lobster', cursive;
+h5{
+	font-family: helvetica;
 	color: white;
-	float: right;
 	letter-spacing: 1px;
+	text-align: center;
 }
 h6{
 	color: white;
@@ -25,11 +51,7 @@ h6{
 	display: inline-block;
 	padding: 5px;
 }
-.col-md-2 {
-	width: 13.66666667%;
-	float: right;
-	margin-left: -20px;
-}
+
 .span1 {
 	font-family: 'Lobster', cursive;
 	color: white;
@@ -41,22 +63,18 @@ h6{
 p{
 	color: white;
 	font-size: 18px;
-	margin-left: 50px;
+	font-family: helvetica;
+	text-shadow: none;
 }
-.bottom{
-	margin-top: 120px;
-}
+
 .navbar-right {
 	margin-right: 20px;
 }
 span{
 	color: white;
 }
-#title{
-	margin-left: 50px;
-}
+
 .dogDiv > a > img {
-	margin-left: 50px;
 	border: 1px solid #c9c9c9;
 	border-radius: 4px;
 	padding: 5px;
@@ -70,14 +88,15 @@ span{
 }
 .dogDiv {
 	background: rgba(0, 0, 0, 0.7);
-	display: inline-block;
-	vertical-align: middle;
-	white-space: normal;
-	margin-right: 20px;
-	color: #ffffff;
-	font-size: 18px;
-	display: none;
+    display: inline-block;
+    vertical-align: middle;
+    white-space: normal;
+    color: #ffffff;
+    font-size: 18px;
+    display: none;
+    text-align: center;
 }
+
 .modal, .modal-body, .modal-header, .modal-footer {
 	background: rgba(0, 0, 0, 0.7);
 }
@@ -149,14 +168,96 @@ h4{
 	line-height: 7px;
 }
 input {
-	max-width: 70%;
-	margin-left: 50px;
-	margin-top: 30px;
+	max-width: 44%;
+	margin-left: 28%;
 }
 .container {
-	margin-right: 75px;
-	margin-top: -20px;
+	
 }
-.red {
-	color: red;
+#dogButton {
+	background-color: rgb(226, 2, 2);
+    color: #f5f3f3;
+    border: 1px solid #f7f3f3;
+    border-radius: 4px;
+    padding: 4px;
+    margin-bottom: 20px;
+
+}
+
+.dogThumbnails{
+	width: 100%;
+    display: inline-flex;
+    text-align: center;
+}
+.dogRow{
+	float: right;
+}
+#title{
+	margin-left: -100px;
+}
+
+@media screen and (max-width: 768px){
+	#title{
+		font-size: 32px;
+		margin-left: 0;
+	}
+	p{
+		padding-right: 20px;
+}
+
+@media screen and (max-width: 640px){
+	p{
+		font-size: 12px;
+	}
+
+	.logo{
+		width: 69%;
+		margin-top: 0;
+		margin-left: 0;
+	}
+
+	#title{
+		font-size: 32px;
+		margin-left: 0;
+
+	}
+
+	.dogThumbnails {
+	    display: inherit;
+	    max-width:77%;
+	    margin-right: -22px;
+	}
+
+	.topBar{
+		text-align: center;
+		background-color: #383737;
+    	padding: -6px;
+    	padding-bottom: 20px;
+    	border-bottom: 3px solid #de0303;
+	}
+
+	#dogButton{
+		font-size:12px;
+	}
+	.chooseDog{
+		margin-top: 29px;
+	}
+	.dogCircle{
+		margin-right:0;
+	}
+
+	.logoRow{
+		background-color: #383737;
+
+	}
+	.bottom{
+	position: absolute;
+ 	bottom: 0px;
+	}
+
+	p{
+		padding-right: 10px;
+	}
+	
+
 }
