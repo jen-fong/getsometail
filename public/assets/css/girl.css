@@ -2,9 +2,7 @@ body{
 	background: none;
 }
 
-a:hover{
-	color: none;
-}
+
 .hvr-grow {
   display: inline-block;
   vertical-align: middle;
@@ -252,7 +250,7 @@ input {
 
 	.dogThumbnails {
 	    display: inherit;
-	    max-width:75%;
+	    max-width:65%;
 
 	}
 

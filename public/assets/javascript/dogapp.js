@@ -11,6 +11,7 @@ var data;
 // resets all the array and html data.
 // Based on user input for address and the dog they click, we send the ajax call to petfinder to retrieve a list of the breed at a specific location
 $('.dog').on('click', function(e) {
+    e.preventDefault();
     shelterInfo = [];
     shelter = [];
     locate = $('#location').val();
