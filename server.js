@@ -27,7 +27,7 @@ var PORT = process.env.PORT || 8000;
 
 app.use(express.static(__dirname + '/public'));
 
-// girlsController(app);
+girlsController(app);
 
 app.listen(PORT, function() {
 	console.log('connected on port ' + PORT);
