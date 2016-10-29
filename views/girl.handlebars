@@ -2,10 +2,10 @@
     <div class="row dogRow">
         <div class="col-md-12 dogThumbnails">
             {{#each dogs }}
-                <a href="#" class="img-circle dogCircle">
-                    <img class="img-responsive" src="../assets/images/thumbnails/{{ image }}.png" alt={{ breed }}>
+                <a href="#" class="img-circle dogCircle ">
+                    <img class="img-responsive " src="../assets/images/thumbnails/{{ image }}.png" alt={{ breed }}>
                     <div>       
-                        <button type="button" id="dogButton" class="btn btn-primary-topNav hvr-float-shadow dog" data-breed={{ breed }} data-toggle="modal" data-target="#modal-2">{{ breed }}</button>
+                        <button type="button" id="dogButton" class="btn btn-primary-topNav dog hvr-grow" data-breed={{ breed }} data-toggle="modal" data-target="#modal-2">{{ breed }}</button>
                     </div>
                 </a>
             {{/each }}  
