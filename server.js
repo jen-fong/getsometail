@@ -23,7 +23,7 @@ var hbs = exphbs.create({
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
-var PORT = process.env.PORT || 3000;
+var PORT = process.env.PORT || 8000;
 
 app.use(express.static(__dirname + '/public'));
 
