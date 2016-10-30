@@ -1,8 +1,6 @@
 body{
-	background: none;
+	background-color: #000000;
 }
-
-
 .hvr-grow {
   display: inline-block;
   vertical-align: middle;

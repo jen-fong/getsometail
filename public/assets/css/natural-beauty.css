@@ -1,0 +1,6 @@
+.girl-bg {
+    background: url('naturalBeautyBackground.png') no-repeat center -100px;
+	height: 550px;
+	background-size: cover;
+	background-color: black;
+}

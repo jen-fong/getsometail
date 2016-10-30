@@ -2,7 +2,6 @@
 module.exports = function(sequelize, DataTypes) {
   var Girl = sequelize.define('Girl', {
     type: DataTypes.STRING,
-    href: DataTypes.STRING,
     description: DataTypes.TEXT
   }, {
     classMethods: {

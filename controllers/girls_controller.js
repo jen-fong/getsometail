@@ -9,15 +9,17 @@ var girlsRoutes = function(app) {
 		res.sendFile(path.join(__dirname, '../public/index.html'));
 	});
 	app.get('/girls/:girl', function (req, res) {
-		var girl = req.params.girl;
-		console.log(girl)
+		var girlURL = req.params.girl.replace(/[^a-z]/g, " ");
+		var girlCSS = req.params.girl.replace(/[^a-z]/g, "-");
+		console.log(girlCSS)
 		Girl.findOne({
 			where: {
-				href: girl
+				type: girlURL
 			}
-		}).then(function (selectedGirl) {
-			var splitGirl = selectedGirl.type;
-			splitGirl = splitGirl.split(' ');
+		}).then(function (girl) {
+			var selectedGirl = girl;
+			selectedGirl.background = req.params.girl.replace(/[^a-z]/g, "-");
+			splitGirl = selectedGirl.type.split(' ');
 			for (var i = 0; i < splitGirl.length; i++) {
 		        splitGirl[i] = splitGirl[i].replace(splitGirl[i].charAt(0), splitGirl[i].charAt(0).toUpperCase());
 		    }
@@ -31,18 +33,30 @@ var girlsRoutes = function(app) {
 					GirlId: selectedGirl.id
 				}
 			}).then(function (dogs) {
-				res.render('girl', {
-					girl: selectedGirl,
-					girlHeading: girlHeadings,
-					dogs: dogs,
-					helpers: {
-						css: function () {
-							return "../assets/css/" + girl + ".css";
-						},
-						title: function() {
-							return splitGirl.join(' ');
+				Girl.findAll({
+					where: {
+						type: {
+							$ne: girlURL
 						}
 					}
+				}).then(function (girls) {
+					var allGirls = girls;
+					for (var i = 0; i < girls.length; i++) {
+						allGirls[i].background = allGirls[i].type.split(' ').join('');
+						console.log(allGirls[i].background)
+					}
+					
+					res.render('girl', {
+						girl: selectedGirl,
+						girlHeading: girlHeadings,
+						dogs: dogs,
+						allGirls: allGirls,
+						helpers: {
+							title: function() {
+								return splitGirl.join(' ');
+							}
+						}
+					});
 				});
 			})
 		})
