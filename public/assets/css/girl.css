@@ -17,7 +17,6 @@ body{
   transform: scale(1.2);
 }
 
-
 .topBar{
 	margin-top: 22px;
 }
@@ -37,8 +36,8 @@ h3{
 }
 
 .bottom{
-	position: absolute;
  	bottom: 37px;
+ 	position: absolute;
 }
 
 .dogCircle{
@@ -210,8 +209,8 @@ input {
 }
 #title{
 	margin-left: -25px;
-}
 
+}
 
 
 
