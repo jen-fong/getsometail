@@ -197,6 +197,7 @@ input {
     padding: 4px;
     margin-bottom: 20px;
     font-size: 12px;
+    white-space: normal;
 
 }
 
@@ -262,6 +263,7 @@ input {
 
 	#dogButton{
 		font-size:10px;
+		white-space: normal;
 	}
 	.chooseDog{
 		margin-top: 29px;
@@ -311,7 +313,7 @@ input {
 	.dogThumbnails {
 	    max-width: 100%;
 	    margin-right: -29px;
-	    margin-top: -19px;
+	   
 	}
 
 	.descriptionDiv {
@@ -326,8 +328,9 @@ input {
 	}
 
 	#dogButton{
-		    font-size: xx-small;
-		    margin-bottom: 9px;
+	    font-size: xx-small;
+	    margin-bottom: 9px;
+	    white-space: normal;
 	}
 
 	.dogRow {
@@ -337,8 +340,6 @@ input {
 	h4{
 		font-size: 22px;
 	}
-
-
 
 }
 
