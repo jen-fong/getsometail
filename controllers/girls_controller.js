@@ -10,9 +10,9 @@ var girlsRoutes = function(app) {
 	});
 	app.get('/girls/:girl', function (req, res) {
 		// replace all none letter characters with a space (match with girl type in db)
-		var girlURL = req.params.girl.replace(/[^a-z]/g, " ");
+		var girlURL = req.params.girl.replace(/-/g, " ");
 		// add a - to the girl names (needed to put the class on the girl to change bg in handlebars)
-		var girlCSS = req.params.girl.replace(/[^a-z]/g, "-");
+		var girlCSS = req.params.girl;
 		// our regex replaced all non letters but we need the . for ms madison
 		if (girlURL === "ms madison ave") {
 			girlURL = "ms. madison ave";
@@ -26,7 +26,7 @@ var girlsRoutes = function(app) {
 			var selectedGirl = girl;
 			// add - to the girl names so we can later use it as a class. 
 			// All classes in background.css has a dash for a space eg beach-bunny
-			selectedGirl.background = req.params.girl.replace(/[^a-z]/g, "-");
+			selectedGirl.background = girlCSS;
 			// this def could have been better but it was too late, I didn't feel like fixing up the code
 			// it still works
 			// basically replaces all first letter lowercase chars for each word to uppercase
@@ -76,6 +76,9 @@ var girlsRoutes = function(app) {
 							// we split the name of the girl and join with a dash
 							// again, this is for the css background
 							allGirls[i].background = allGirls[i].type.split(' ').join('-');
+							if (allGirls[i].type === "ms. madison ave") {
+								allGirls[i].background = "ms-madison-ave";
+							}
 							// we split the girl's name again and repeat as before.
 							// uppercase all first chars of word and then set to allGirlHeadings
 							var splitted = allGirls[i].type.split(' ');
@@ -117,13 +120,11 @@ var girlsRoutes = function(app) {
 								}
 							}
 						});
-					})
-
-					
-				})
-			})
-		})
-	})
+					});
+				});
+			});
+		});
+	});
 };
 
 module.exports = girlsRoutes;
