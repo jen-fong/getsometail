@@ -1,7 +1,10 @@
 body{
-	background: none;
+	background-color: #000000;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 47babe37bbb57f9c15054f4046f322c00a33f068
 .hvr-grow {
   display: inline-block;
   vertical-align: middle;
@@ -17,7 +20,6 @@ body{
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
-
 
 .topBar{
 	margin-top: 22px;
@@ -38,8 +40,8 @@ h3{
 }
 
 .bottom{
-	position: absolute;
  	bottom: 37px;
+ 	position: absolute;
 }
 
 .dogCircle{
@@ -211,8 +213,8 @@ input {
 }
 #title{
 	margin-left: -25px;
-}
 
+}
 
 
 
