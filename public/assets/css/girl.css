@@ -150,7 +150,7 @@ h4{
 .dogDivActive {
 	display: block;
 }
-.next {
+.nextButton {
 	float: right;
 	display: inline-block;
 	border: none;
@@ -164,7 +164,7 @@ h4{
 	margin: 10px;
 	font-size: 12px;
 }
-.prev{
+.prevButton {
 	float: left;
 	display: inline-block;
 	border: none;
