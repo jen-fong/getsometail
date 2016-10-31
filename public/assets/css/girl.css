@@ -2,7 +2,6 @@ body{
 	background: none;
 }
 
-
 .hvr-grow {
   display: inline-block;
   vertical-align: middle;
@@ -15,8 +14,8 @@ body{
   transition-property: transform;
 }
 .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 
@@ -111,7 +110,6 @@ span{
     white-space: normal;
     color: #ffffff;
     font-size: 18px;
-    display: none;
     text-align: center;
 }
 
@@ -199,6 +197,7 @@ input {
     border-radius: 4px;
     padding: 4px;
     margin-bottom: 20px;
+    font-size: 12px;
 
 }
 
@@ -220,7 +219,7 @@ input {
 @media screen and (max-width: 768px){
 	#title{
 		font-size: 32px;
-		margin-left: 0;
+		margin-left: 20px;
 	}
 	p{
 		padding-right: 20px;
@@ -249,8 +248,8 @@ input {
 	}
 
 	.dogThumbnails {
-	    display: inherit;
-	    max-width:65%;
+	    display: table-caption;
+	   
 
 	}
 
@@ -278,7 +277,7 @@ input {
 	}
 	.bottom{
 	position: absolute;
- 	bottom: 0px;
+ 	bottom: 5px;
 	}
 
 	p{
@@ -288,6 +287,10 @@ input {
 
 	h5{
 		font-size: 12px;
+	}
+	h4{
+		font-size: 25px;
+
 	}
 
 	.dogRow{
@@ -307,21 +310,20 @@ input {
 
 @media screen and (max-width: 320px){
 	.dogThumbnails {
-	    display: inherit;
-	    max-width: 75%;
+	    max-width: 100%;
 	    margin-right: -29px;
 	    margin-top: -19px;
 	}
 
 	.descriptionDiv {
-	    padding-top: 40px;
+	    /*padding-top: 40px;*/
 	    padding-bottom: 13;
-	    padding-left: 19px;
+	    padding-left: 30px;
 	}
 
 	.chooseDog{
 		margin-top: 22px;
-		display: inherit;
+		/*display: inherit;*/
 	}
 
 	#dogButton{
@@ -331,8 +333,10 @@ input {
 
 	.dogRow {
     	float: right;
-   	 	margin-top: 29px;
     	margin-right: initial;
+	}
+	h4{
+		font-size: 22px;
 	}
 
 

@@ -1,23 +1,12 @@
-    
-
-    <div class="item active">
-                <!-- Set the first background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('assets/css/beachBunnyBackground.png);"></div>
-                <div class="carousel-caption">
-                    <h2>Caption 1</h2>
-                </div>
-         
-
-
     <div class="row dogRow">
-        <div class="col-md-12 dogThumbnails">
+        <div class="col-md-4 dogThumbnails">
             {{#each dogs }}
 
-                <a href="#" class="img-circle dogCircle">
-                    <img class="img-responsive dog" src="../assets/images/thumbnails/{{ image }}.png" alt={{ breed }} data-breed={{ breed }} data-toggle="modal" data-target="#modal-2">
+                <a href="#" class="img-circle dogCircle hvr-grow">
+                    <img class="img-responsive dog " src="../assets/images/thumbnails/{{ image }}.png" alt={{ breed }} data-breed={{ breed }} data-toggle="modal" data-target="#modal-2">
 
                     <div>       
-                        <button type="button" id="dogButton" class="btn btn-primary-topNav dog hvr-grow" data-breed={{ breed }} data-toggle="modal" data-target="#modal-2">{{ breed }}</button>
+                        <button type="button" id="dogButton" class="btn btn-primary-topNav dog " data-breed={{ breed }} data-toggle="modal" data-target="#modal-2">{{ breed }}</button>
                     </div>
                 </a>
             {{/each }}  
@@ -26,13 +15,11 @@
 
    
 
-        <div class="row bottom"> 
-            <div class="col-md-7 descriptionDiv">
-               <div id="title" class="span1">{{ girlHeading.heading1}} <span>{{ girlHeading.heading2 }}</span>  {{girlHeading.heading3}}
-                    <p>{{ girl.description }}</p>
-                </div>
+    <div class="row bottom"> 
+        <div class="col-md-7 descriptionDiv">
+           <div id="title" class="span1">{{ girlHeading.heading1}} <span>{{ girlHeading.heading2 }}</span>  {{girlHeading.heading3}}
+                <p>{{ girl.description }}</p>
             </div>
         </div>
     </div>
-
 
