@@ -1,0 +1,128 @@
+.beach-bunny {
+    background: url('beachBunnyBackground.png') no-repeat center center;
+	height: 550px;
+	background-size: cover;
+	background-color: black;
+}
+
+.biker-babe {
+	background: url('bikerBabeBackground.png') no-repeat center center;
+	height: 550px;
+	background-size: cover;
+	background-color: black;
+}
+.blonde-bombshell {
+	background: url('blondeBombshellBackground.png') no-repeat center center;
+	height: 550px;
+	background-size: cover;
+	background-color: black;
+}
+.bootylicious-babe {
+	background: url('bootyliciousBackground.png') no-repeat center center;
+	height: 550px;
+	background-size: cover;
+	background-color: black;
+
+}
+.daddy\'s-girl {
+	background: url('daddysGirlBackground.png') no-repeat center center;
+	height: 550px;
+	background-size: cover;
+	background-color: black;
+}
+.fierce-cowgirl {
+    background: url('fierceCowgirlBackground.png') no-repeat center center;
+	height: 550px;
+	background-size: cover;
+	background-color: black;
+}
+.fitness-chic {
+	background: url('fitnessChicBackground.png') no-repeat center center;
+	height: 550px;
+	background-size: cover;
+	background-color: black;
+}
+.girl-next-door {
+	background: url('girlNextDoorBackground.png') no-repeat center center;
+	height: 550px;
+	background-size: cover;
+	background-color: black;
+}
+.ms-madison-ave {
+    background: url('madisonAveBackground.png') no-repeat center center;
+	height: 550px;
+	background-size: cover;
+	background-color: black;
+}
+.natural-beauty {
+    background: url('naturalBeautyBackground.png') no-repeat center center;
+	height: 550px;
+	background-size: cover;
+	background-color: black;
+}
+.sexy-brunette {
+    background: url('sexyBrunetteBackground.png') no-repeat center center;
+	height: 550px;
+	background-size: cover;
+	background-color: black;
+}
+.tattooed-baby {
+    background: url('tattooedBabyBackground.png') no-repeat center center;
+	height: 550px;
+	background-size: cover;
+	background-color: black;
+}
+
+@media screen and (max-width: 320px){
+	
+.beach-bunny {
+	height: 445px;
+	
+}
+
+.biker-babe {
+	height: 445px;
+	
+}
+.blonde-bombshell {
+	height: 445px;
+	
+}
+.bootylicious-babe {
+	height: 445px;
+	
+
+}
+.daddy\'s-girl {
+	height: 445px;
+	
+}
+.fierce-cowgirl {
+	height: 445px;
+	
+}
+.fitness-chic {
+	height: 445px;
+	
+}
+.girl-next-door {
+	height: 445px;
+	
+}
+.ms-madison-ave {
+	height: 445px;
+	
+}
+.natural-beauty {
+	height: 445px;
+	
+}
+.sexy-brunette {
+	height: 445px;
+	
+}
+.tattooed-baby {
+	height: 445px;
+	
+	}
+}

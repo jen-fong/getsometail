@@ -6,15 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
     <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="../assets/css/girl.css">
-    <link rel="stylesheet" type="text/css" href="{{> page/css}}">
-    <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+    <link rel="stylesheet" type="text/css" href="../assets/css/background.css">
+   
+
     <script
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYNZtnyYPdGG29PTxUPcZoFMioiKJbfV8">
     </script>  
-    <link rel="stylesheet" href="../assets/css/edit.css" type="text/css" media="screen" />
+
 
 </head>
 <body>
@@ -27,13 +29,28 @@
     </div>
     <div class="container">
         <div class="row "> 
-            <div class="col-lg-4 col-lg-offset-8 chooseDog">
+            <div class="col-sm-5 col-sm-offset-7 chooseDog">
                 <h5>Enter Your Zip Code & Select Your Wingman</h5>
                 <input type="text" class="form-control" id="location" placeholder="Zip Code"><br>
             </div>
         </div>
 
-        {{{ body }}}
+
+        <div id="myCarousel" class="carousel slide" data-interval="false">
+
+            <div class="carousel-inner">
+                {{{ body }}}
+            </div>
+            <div>
+                <a id="leftControl" class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span id="nextIcon" class="icon-prev"></span>
+                </a>
+                <a id="rightControl" class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span id="nextIcon" class="icon-next "></span>
+                </a>
+            </div> 
+        </div>
+
 
     </div>
     <div class="modal fade" id="modal-2">

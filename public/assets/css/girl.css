@@ -1,9 +1,42 @@
 body{
-	background: none;
+	background-color: #000000;
+}
+
+.hvr-shrink {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-shrink:hover, .hvr-shrink:focus, .hvr-shrink:active {
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+
+#nextIcon{
+	font-family: Verdana;
+	font-size: 50px;
+	top: 33%;
+}
+
+#rightControl{
+	background: none !important; 
+	filter: none !important; 
 }
 
 .topBar{
 	margin-top: 22px;
+}
+
+.container{
+	padding-right: 0;
+	padding-left: 0;
 }
 
 .close{
@@ -19,10 +52,15 @@ body{
 h3{
 	color: white;
 }
+/*.carousel-control { 
+	background: none !important; 
+	filter: none !important; 
+	
+}*/
 
 .bottom{
-	position: absolute;
  	bottom: 37px;
+ 	position: absolute;
 }
 
 .dogCircle{
@@ -93,7 +131,6 @@ span{
     white-space: normal;
     color: #ffffff;
     font-size: 18px;
-    display: none;
     text-align: center;
 }
 
@@ -135,7 +172,7 @@ h4{
 .dogDivActive {
 	display: block;
 }
-.next {
+.nextButton {
 	float: right;
 	display: inline-block;
 	border: none;
@@ -149,7 +186,7 @@ h4{
 	margin: 10px;
 	font-size: 12px;
 }
-.prev{
+.prevButton {
 	float: left;
 	display: inline-block;
 	border: none;
@@ -171,9 +208,7 @@ input {
 	max-width: 44%;
 	margin-left: 28%;
 }
-.container {
-	
-}
+
 #dogButton {
 	background-color: rgb(226, 2, 2);
     color: #f5f3f3;
@@ -181,6 +216,8 @@ input {
     border-radius: 4px;
     padding: 4px;
     margin-bottom: 20px;
+    font-size: 12px;
+    white-space: normal;
 
 }
 
@@ -194,19 +231,24 @@ input {
 }
 #title{
 	margin-left: -25px;
-}
 
+}
 
 
 
 @media screen and (max-width: 768px){
 	#title{
 		font-size: 32px;
-		margin-left: 0;
+		margin-left: 20px;
 	}
 	p{
 		padding-right: 20px;
 	}
+	.nextIcon{
+		font-family: Verdana;
+		font-size: 55px;
+}
+
 }
 
 @media screen and (max-width: 640px){
@@ -231,8 +273,8 @@ input {
 	}
 
 	.dogThumbnails {
-	    display: inherit;
-	    max-width:75%;
+	    display: table-caption;
+	   
 
 	}
 
@@ -246,6 +288,7 @@ input {
 
 	#dogButton{
 		font-size:10px;
+		white-space: normal;
 	}
 	.chooseDog{
 		margin-top: 29px;
@@ -260,7 +303,7 @@ input {
 	}
 	.bottom{
 	position: absolute;
- 	bottom: 0px;
+ 	bottom: 38px;
 	}
 
 	p{
@@ -271,9 +314,13 @@ input {
 	h5{
 		font-size: 12px;
 	}
+	h4{
+		font-size: 25px;
+
+	}
 
 	.dogRow{
-	margin-right: 0;
+	margin-right: 25px;
 	}
 }
 
@@ -289,35 +336,35 @@ input {
 
 @media screen and (max-width: 320px){
 	.dogThumbnails {
-	    display: inherit;
-	    max-width: 75%;
-	    margin-right: -29px;
-	    margin-top: -19px;
+	    max-width: 100%;
+	    
+	   
 	}
 
 	.descriptionDiv {
-	    padding-top: 40px;
+	    /*padding-top: 40px;*/
 	    padding-bottom: 13;
-	    padding-left: 19px;
+	    padding-left: 30px;
 	}
 
 	.chooseDog{
 		margin-top: 22px;
-		display: inherit;
+		/*display: inherit;*/
 	}
 
 	#dogButton{
-		    font-size: xx-small;
-		    margin-bottom: 9px;
+	    font-size: xx-small;
+	    margin-bottom: 9px;
+	    white-space: normal;
 	}
 
 	.dogRow {
     	float: right;
-   	 	margin-top: 29px;
-    	margin-right: initial;
+    	margin-right: 25px;
 	}
-
-
+	h4{
+		font-size: 22px;
+	}
 
 }
 

@@ -65,13 +65,13 @@ $('.dog').on('click', function(e) {
                     dogDiv.append('<p>Call for more info: ' + dog[i].contact.phone['$t']);
                 };
                 dogDiv.append($('<button>', {
-                    class: 'prev glyphicon glyphicon-menu-left',
+                    class: 'prevButton glyphicon glyphicon-menu-left',
                     id: 'goBack',
                     text: 'Prev'
                 }));
                 dogDiv.append($('<button>', {
                     text: 'Next',
-                    class: 'next glyphicon glyphicon-menu-right',
+                    class: 'nextButton glyphicon glyphicon-menu-right',
                     id: 'goForward'
                 }));
                 dogDiv.append($('<button>', {
