@@ -6,11 +6,11 @@
                 <div class="col-md-12 dogThumbnails">
                     {{#each dogs }}
 
-                        <a href="#" class="img-circle dogCircle">
+                        <a href="#" class="img-circle dogCircle dog hvr-shrink">
                             <img class="img-responsive dog" src="../assets/images/thumbnails/{{ image }}.png" alt={{ breed }} data-breed={{ breed }} data-toggle="modal" data-target="#modal-2">
 
                             <div>       
-                                <button type="button" id="dogButton" class="btn btn-primary-topNav dog hvr-grow" data-breed={{ breed }} data-toggle="modal" data-target="#modal-2">{{ breed }}</button>
+                                <button type="button" id="dogButton" class="btn btn-primary-topNav dog hvr-shrink" data-breed={{ breed }} data-toggle="modal" data-target="#modal-2">{{ breed }}</button>
                             </div>
                         </a>
                     {{/each }}  
@@ -38,10 +38,10 @@
                     {{#each dogs }}
 
                         <a href="#" class="img-circle dogCircle">
-                            <img class="img-responsive dog" src="../assets/images/thumbnails/{{ image }}.png" alt={{ breed }} data-breed={{ breed }} data-toggle="modal" data-target="#modal-2">
+                            <img class="img-responsive dog hvr-shrink" src="../assets/images/thumbnails/{{ image }}.png" alt={{ breed }} data-breed={{ breed }} data-toggle="modal" data-target="#modal-2">
 
                             <div>       
-                                <button type="button" id="dogButton" class="btn btn-primary-topNav dog hvr-grow" data-breed={{ breed }} data-toggle="modal" data-target="#modal-2">{{ breed }}</button>
+                                <button type="button" id="dogButton" class="btn btn-primary-topNav dog hvr-shrink" data-breed={{ breed }} data-toggle="modal" data-target="#modal-2">{{ breed }}</button>
                             </div>
                         </a>
                     {{/each }}  

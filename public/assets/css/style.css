@@ -9,6 +9,21 @@ a:hover{
 	color: black;
 }
 
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+}
+
+.navbar-fixed-top .nav {
+    padding: 15px 0;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: #f33131;
+}
+
+.navbar-fixed-top .navbar-brand {
+    padding: 0 36px;
+}
+
 /* Border Fade */
 .hvr-border-fade {
   display: inline-block;
@@ -49,15 +64,17 @@ body{
 	background: none;
 }
 
+#navbarHome{
+  background-color: transparent;
+  border-color: transparent;
+
+}
+
 .logo{
-	margin-left: 8%;
-	margin-top: 30px;
+	margin-top: 19px;
 
 }
 
-.navbar-right {
-	margin-right: 20px;
-}
 
 .banner{
 	max-width: 100%;
@@ -65,8 +82,8 @@ body{
 	margin-left: 0;
 	margin-right: 0;
 	background-color: #470709;
-    border: 1px solid #ddd;
-    margin-top: 20px;
+  border: 1px solid #ddd;
+  margin-top: 20px;
 }
 #topBanner{
 	padding-right: 0px;
@@ -80,11 +97,11 @@ body{
 
 .thumbnail{
 	background-color: #000;
-    border: 1px solid #ddd;
-    max-width: 220px;
-   	padding: 5px;
-   	margin: 5px auto;
-   	margin-top: 22px;
+  border: 1px solid #ddd;
+  max-width: 220px;
+ 	padding: 5px;
+ 	margin: 5px auto;
+ 	margin-top: 22px;
 }
 h5{
 	color: red;
@@ -94,12 +111,9 @@ h5{
 	 border: 1px  #fff;
 }
 
-
-
 .caption span{
 	color: white;
 }
-
 
 
 footer{
@@ -127,11 +141,22 @@ footer{
 
  @media screen and (max-width: 768px){
  	.logo{
- 		max-width: 48%;
- 		text-align: center;
+    margin-top: 14px;
+    margin-left: 20px;
  	}
 
- 	.banner {
-   		 max-width: 109%;
 
- }
+ body {
+        padding-top: 100px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+    }
+
+    .navbar-fixed-top .navbar-brand {
+        padding: 15px 0;
+    }
+
+    h5{
+      font-size: 12px;
+
+    }
+    
+  }

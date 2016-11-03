@@ -2,7 +2,7 @@ body{
 	background-color: #000000;
 }
 
-.hvr-grow {
+.hvr-shrink {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -13,13 +13,30 @@ body{
   -webkit-transition-property: transform;
   transition-property: transform;
 }
-.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+.hvr-shrink:hover, .hvr-shrink:focus, .hvr-shrink:active {
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+
+#nextIcon{
+	font-family: Verdana;
+	font-size: 50px;
+	top: 33%;
+}
+
+#rightControl{
+	background: none !important; 
+	filter: none !important; 
 }
 
 .topBar{
 	margin-top: 22px;
+}
+
+.container{
+	padding-right: 0;
+	padding-left: 0;
 }
 
 .close{
@@ -35,6 +52,11 @@ body{
 h3{
 	color: white;
 }
+/*.carousel-control { 
+	background: none !important; 
+	filter: none !important; 
+	
+}*/
 
 .bottom{
  	bottom: 37px;
@@ -186,9 +208,7 @@ input {
 	max-width: 44%;
 	margin-left: 28%;
 }
-.container {
-	
-}
+
 #dogButton {
 	background-color: rgb(226, 2, 2);
     color: #f5f3f3;
@@ -224,6 +244,11 @@ input {
 	p{
 		padding-right: 20px;
 	}
+	.nextIcon{
+		font-family: Verdana;
+		font-size: 55px;
+}
+
 }
 
 @media screen and (max-width: 640px){
@@ -278,7 +303,7 @@ input {
 	}
 	.bottom{
 	position: absolute;
- 	bottom: 5px;
+ 	bottom: 38px;
 	}
 
 	p{
@@ -295,7 +320,7 @@ input {
 	}
 
 	.dogRow{
-	margin-right: 0;
+	margin-right: 25px;
 	}
 }
 
@@ -312,7 +337,7 @@ input {
 @media screen and (max-width: 320px){
 	.dogThumbnails {
 	    max-width: 100%;
-	    margin-right: -29px;
+	    
 	   
 	}
 
@@ -335,7 +360,7 @@ input {
 
 	.dogRow {
     	float: right;
-    	margin-right: initial;
+    	margin-right: 25px;
 	}
 	h4{
 		font-size: 22px;
