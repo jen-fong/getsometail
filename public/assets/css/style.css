@@ -13,6 +13,10 @@ body {
     padding-top: 70px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
 }
 
+#modalImage{
+  text-align: center;
+}
+
 .navbar-fixed-top .nav {
     padding: 15px 0;
 }
@@ -23,7 +27,9 @@ body {
 .navbar-fixed-top .navbar-brand {
     padding: 0 36px;
 }
-
+.navbar-toggle {
+  border: transparent;
+}
 /* Border Fade */
 .hvr-border-fade {
   display: inline-block;
@@ -75,6 +81,10 @@ body{
 
 }
 
+p{
+  padding: inherit;
+}
+
 
 .banner{
 	max-width: 100%;
@@ -94,6 +104,25 @@ body{
 	height: 400px;
 
 }
+.manWithDog{
+  border: 2px solid #737171;;
+  max-width: 100%;
+  height: auto;
+}
+
+#modalButton{
+  background-color: red;
+  color: white;
+}
+
+
+#modalTitle{
+  color: #737171;;
+  font-size: 35px;
+  text-align: center;
+  line-height: normal;
+}
+
 
 .thumbnail{
 	background-color: #000;
@@ -145,6 +174,10 @@ footer{
     margin-left: 20px;
  	}
 
+  ul{
+    display: inline-flex;
+  }
+
 
  body {
         padding-top: 100px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
@@ -160,3 +193,37 @@ footer{
     }
     
   }
+
+@media screen and (max-width: 768px){
+  .nav>li>a {
+    padding: 10px 9px;
+    font-size: 11px;
+    }
+
+  .logo {
+    margin-top: 9px;
+    margin-left: 14px;
+  } 
+
+}
+
+@media screen and (max-width: 320px){
+  .nav>li>a {
+    padding: 10px 9px;
+    font-size: 11px;
+    }
+
+  .logo {
+    margin-top: 9px;
+    margin-left: 14px;
+    max-width: 83%;
+  } 
+.navbar-toggle {
+    margin-top: 32px;
+    margin-right: 35px;
+    }
+    .navbar-fixed-top .nav {
+      padding: 0;
+    }
+  }
+
