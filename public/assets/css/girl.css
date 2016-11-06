@@ -260,6 +260,7 @@ input {
   border: 2px solid #737171;;
   max-width: 100%;
   height: auto;
+  display: none;
 }
 
 #modalButton{
@@ -294,6 +295,17 @@ input {
 		font-family: Verdana;
 		font-size: 55px;
 	}
+	body {
+    padding-top: 118px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+	}
+	#girlNavbar{
+	margin-top: 30px;
+	margin-bottom:30px;
+	}
+	.navbar-nav {
+    	margin-top: 25PX;
+    }
+
 
 }
 
@@ -328,13 +340,13 @@ input {
 
 	}
 
-	.topBar{
+	/*.topBar{
 		text-align: center;
 		background-color: #383737;
     	padding: -6px;
     	padding-bottom: 20px;
     	border-bottom: 3px solid #de0303;
-	}
+	}*/
 
 	#dogButton{
 		font-size:10px;
@@ -368,27 +380,46 @@ input {
 		font-size: 25px;
 
 	}
+	#girlNavbar{
+	margin-top: 13px;
+	margin-bottom:20px;
+}
 
 	.dogRow{
 	margin-right: 25px;
 	}
 }
 
+@media screen and (max-width: 414px){
 
-/*@media only screen and (max-device-width: 568px) and (orientation: landscape){
+	.bottom{
+ 		bottom: 57px;
+	}
+	#dogButton {
+    font-size: 13px;
+	}
+}
 
-		p{
-			font-size: 11px;
-		}
-		.logo {
-    		width: 40%;
-}*/
+
+@media screen and (max-width: 375px){
+
+	.bottom{
+ 		bottom: 31px;
+	}
+	#dogButton {
+    font-size: 11px;
+	}
+}
 
 @media screen and (max-width: 320px){
 	.dogThumbnails {
 	    max-width: 100%;
-	    
 	   
+	}
+
+	.bottom{
+		position: absolute;
+ 		bottom: 0px;
 	}
 
 	.descriptionDiv {
