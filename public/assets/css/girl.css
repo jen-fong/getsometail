@@ -1,7 +1,16 @@
 body{
 	background-color: #000000;
 }
+#girlNavbar{
+	margin-right: 0;
+	margin-left: 0;
+	margin-top: 10px;
+	margin-bottom:10px;
+}
 
+ul{
+	margin-left: 4px !important;
+}
 .hvr-shrink {
   display: inline-block;
   vertical-align: middle;
@@ -27,11 +36,19 @@ body{
 
 #rightControl{
 	background: none !important; 
-	filter: none !important; 
+	filter: none !important;
+	max-height: 10px;
+    top: 33%; 
 }
-
-.topBar{
+body {
+    padding-top: 85px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+}
+/*.topBar{
 	margin-top: 22px;
+}*/
+.removeMargin{
+	margin-left: 0;
+	margin-right: 0;
 }
 
 .container{
@@ -57,20 +74,25 @@ h3{
 	filter: none !important; 
 	
 }*/
-
+.navbar-toggle {
+  	border: transparent;
+  	margin-right: 5px;
+}
 .bottom{
  	bottom: 37px;
  	position: absolute;
 }
 
+.navbar-inverse .navbar-nav>li>a {
+    color: #f93221;
+    padding-top: 27px;
+}
 .dogCircle{
 	margin-right: 15px;
 }
 
 .logo{
-	margin-top: 22px;
-	margin-left: 8%;
-
+	margin-top: -10px;
 
 }
 .navbar-form {
@@ -247,7 +269,7 @@ input {
 	.nextIcon{
 		font-family: Verdana;
 		font-size: 55px;
-}
+	}
 
 }
 
@@ -259,11 +281,15 @@ input {
     	border-radius: 1px;
 	}
 
+	.navbar-inverse .navbar-nav>li>a {
+    color: #f93221;
+    padding-top: 0px;
+	}
+
 
 	.logo{
-		width: 69%;
-		margin-top: 0;
-		margin-left: 0;
+		width: 85%;
+    	margin-top: -5px;
 	}
 
 	#title{
@@ -290,9 +316,9 @@ input {
 		font-size:10px;
 		white-space: normal;
 	}
-	.chooseDog{
-		margin-top: 29px;
-	}
+	/*.chooseDog{
+		margin-top: 102px;
+	}*/
 	.dogCircle{
 		margin-right:0;
 	}
@@ -302,8 +328,8 @@ input {
 
 	}
 	.bottom{
-	position: absolute;
- 	bottom: 38px;
+		position: absolute;
+ 		bottom: 38px;
 	}
 
 	p{
@@ -347,10 +373,10 @@ input {
 	    padding-left: 30px;
 	}
 
-	.chooseDog{
-		margin-top: 22px;
+	/*.chooseDog{
+		margin-top: 82px;
 		/*display: inherit;*/
-	}
+	/*}*/
 
 	#dogButton{
 	    font-size: xx-small;
