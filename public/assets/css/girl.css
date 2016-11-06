@@ -270,6 +270,9 @@ input {
 		font-family: Verdana;
 		font-size: 55px;
 	}
+	body {
+    padding-top: 118px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+	}
 
 }
 
@@ -350,21 +353,30 @@ input {
 	}
 }
 
+@media screen and (max-width: 414px){
 
-/*@media only screen and (max-device-width: 568px) and (orientation: landscape){
+	.bottom{
+ 		bottom: 57px;
+	}
+}
 
-		p{
-			font-size: 11px;
-		}
-		.logo {
-    		width: 40%;
-}*/
+
+@media screen and (max-width: 375px){
+
+	.bottom{
+ 		bottom: 31px;
+	}
+}
 
 @media screen and (max-width: 320px){
 	.dogThumbnails {
 	    max-width: 100%;
-	    
 	   
+	}
+
+	.bottom{
+		position: absolute;
+ 		bottom: 0px;
 	}
 
 	.descriptionDiv {
