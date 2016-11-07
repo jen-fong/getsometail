@@ -5,9 +5,6 @@ var Girl = require('../models/').Girl;
 var Dog = require('../models').Dog;
 
 var girlsRoutes = function(app) {
-	app.get('/', function (req, res) {
-		res.sendFile(path.join(__dirname, '../public/index.html'));
-	});
 	app.get('/girls/:girl', function (req, res) {
 		// replace all none letter characters with a space (match with girl type in db)
 		var girlURL = req.params.girl.replace(/-/g, " ");

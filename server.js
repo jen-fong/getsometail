@@ -3,6 +3,7 @@ var bodyParser = require('body-parser');
 var exphbs = require('express-handlebars');
 var path = require('path');
 var girlsController = require('./controllers/girls_controller');
+var dogController = require('./controllers/dog_controller');
 var models = require('./models');
 
 models.sequelize.sync().then(function() {
@@ -27,7 +28,11 @@ var PORT = process.env.PORT || 8000;
 
 app.use(express.static(__dirname + '/public'));
 
+app.get('/', function (req, res) {
+	res.sendFile(path.join(__dirname, '../public/index.html'));
+});
 girlsController(app);
+dogController(app);
 
 app.listen(PORT, function() {
 	console.log('connected on port ' + PORT);
