@@ -23,7 +23,8 @@ var dogRoutes = function(app) {
 				breed: breed
 			}
 		}).then(function (dog) {
-			console.log(dog)
+			console.log(dog);
+			
 			res.render('dog', {dog: dog});
 		})
 		
