@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
     <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
-    <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="../assets/css/girl.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/background.css">
@@ -15,35 +14,31 @@
 
     <script
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYNZtnyYPdGG29PTxUPcZoFMioiKJbfV8">
-    </script>  
-
-
+    </script>
 </head>
 <body>
-
-
-<div class="modal fade" id="appInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                <h4 id="modalTitle" class="modal-title" id="myModalLabel">There’s Just Something About Men Who Own Dogs!
-                </h4>
-            </div>
-            <div class="modal-body">
-                <div id="modalImage">
-                  <img class= "manWithDog" src="../assets/images/other/manWithDog.png" alt="manWithDog">
+    <div class="modal fade" id="appInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 id="modalTitle" class="modal-title" id="myModalLabel">There’s Just Something About Men Who Own Dogs!
+                    </h4>
                 </div>
-                <p class="info">Statistics prove that men are WAY more approachable while walking a dog which allows women to feel more comfortable striking up a conversation! Get Some Tail is a dog adoption app which allows men to choose their dog by the type of women they want to attract.<br>One study showed that 82% of people would feel more confident approaching an attractive person if they had their dog with them. Over the course of another study, Antoine approached 240 women.<br> When he was alone, his success rate was around 1 in 10. But when the dog was present, his chances jumped to 1 in 3. Not bad at all.</p>
-            </div>
-            <div class="modal-footer">
-                <button id="modalButton" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <div class="modal-body">
+                    <div id="modalImage">
+                      <img class= "manWithDog" src="../assets/images/other/manWithDog.png" alt="manWithDog">
+                    </div>
+                    <p class="info">Statistics prove that men are WAY more approachable while walking a dog which allows women to feel more comfortable striking up a conversation! Get Some Tail is a dog adoption app which allows men to choose their dog by the type of women they want to attract.<br>One study showed that 82% of people would feel more confident approaching an attractive person if they had their dog with them. Over the course of another study, Antoine approached 240 women.<br> When he was alone, his success rate was around 1 in 10. But when the dog was present, his chances jumped to 1 in 3. Not bad at all.</p>
+                </div>
+                <div class="modal-footer">
+                    <button id="modalButton" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
             </div>
         </div>
     </div>
-</div>
     <!-- Navigation -->
     <nav id="navbarHome" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
@@ -115,10 +110,10 @@
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h3 class="modal-title">Dogs</h3>
                 </div>
-                <div class="modal-body" id="apiDiv">
-                    
+                <div class="modal-body">
+                    <div id="apiDiv"></div>
                 </div>
-                {{!-- <div id="map-canvas" class="col-xs-4"></div> --}}
+                {{!-- d --}}
                 <div class="modal-footer">
                     <a href="" class="btn btn-default" data-dismiss="modal">Close</a>
                 </div>

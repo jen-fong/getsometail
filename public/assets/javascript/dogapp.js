@@ -38,48 +38,51 @@ $('.dog').on('click', function(e) {
         // Adds a button for navigating through the dogDivs.
         // Adds a button, that when clicked, will open up maps and place a marker on the map.
         for (var i = 0; i <= 9; i++) {
-                if (i === 0) {
-                    dogDiv = $('<div>', {
-                        'class': 'dogDiv dogDivActive'
-                    });
-                } else {
-                    dogDiv = $('<div>', {
-                    'class': 'dogDiv'
+            if (i === 0) {
+                dogDiv = $('<div>', {
+                    'class': 'dogDiv dogDivActive'
                 });
-                }
-                console.log(dog[i].shelterId['$t']);
-                // pushes the shelter id to an empty array. This is needed because the pet.find method does not return any info on the shelter!
-                shelter.push(dog[i].shelterId['$t']);
-                console.log(shelter);
-                dogDiv.append('<a href="https://www.petfinder.com/petdetail/' + dog[i].id['$t'] +  '"><img src=' + dog[i].media.photos.photo[3]['$t'] + ' />');
-                dogDiv.append('<p><h4>Name: ' + dog[i].name['$t']);
-                if (dog[i].description['$t'] === undefined) {
-                    dogDiv.append("<h4>Meet me!</h4><p>No description available, but look how cute I am!</p>");
-                } else { 
-                    dogDiv.append('<h4>Meet me!</h4><p>' + dog[i].description['$t']);
-                }
-                dogDiv.append('<p>Email @: <a href="mailto:' + dog[i].contact.email['$t'] + '">' + dog[i].contact.email['$t'] + '</a> for more info');
-                if (dog[i].contact.phone['$t'] === undefined) {
-                    dogDiv.append('<p>No phone number available, email us instead!</p>');
-                } else {
-                    dogDiv.append('<p>Call for more info: ' + dog[i].contact.phone['$t']);
-                };
-                dogDiv.append($('<button>', {
-                    class: 'prevButton glyphicon glyphicon-menu-left',
-                    id: 'goBack',
-                    text: 'Prev'
-                }));
-                dogDiv.append($('<button>', {
-                    text: 'Next',
-                    class: 'nextButton glyphicon glyphicon-menu-right',
-                    id: 'goForward'
-                }));
-                dogDiv.append($('<button>', {
-                    class: 'locateDog',
-                    text: 'Locate',
-                    value: i
-                }));
-                $('#apiDiv').append(dogDiv);
+            } else {
+                dogDiv = $('<div>', {
+                'class': 'dogDiv'
+            });
+            }
+            console.log(dog[i].shelterId['$t']);
+            // pushes the shelter id to an empty array. This is needed because the pet.find method does not return any info on the shelter!
+            shelter.push(dog[i].shelterId['$t']);
+            console.log(shelter);
+            dogDiv.append('<a href="https://www.petfinder.com/petdetail/' + dog[i].id['$t'] +  '"><img src=' + dog[i].media.photos.photo[3]['$t'] + ' />');
+            dogDiv.append('<p><h4>Name: ' + dog[i].name['$t']);
+            if (!dog[i].description['$t']) {
+                dogDiv.append("<h4>Meet me!</h4><p>No description available, but look how cute I am!</p>");
+            } else { 
+                dogDiv.append('<h4>Meet me!</h4><p>' + dog[i].description['$t']);
+            }
+            dogDiv.append('<p>Email @: <a href="mailto:' + dog[i].contact.email['$t'] + '">' + dog[i].contact.email['$t'] + '</a> for more info');
+            if (dog[i].contact.phone['$t']) {
+                dogDiv.append('<p>No phone number available, email us instead!</p>');
+            } else {
+                dogDiv.append('<p>Call for more info: ' + dog[i].contact.phone['$t']);
+            }
+            dogDiv.append($('<div>', {
+                id: 'map-canvas'
+            }));
+            dogDiv.append($('<button>', {
+                class: 'prevButton glyphicon glyphicon-menu-left',
+                id: 'goBack',
+                text: 'Prev'
+            }));
+            dogDiv.append($('<button>', {
+                text: 'Next',
+                class: 'nextButton glyphicon glyphicon-menu-right',
+                id: 'goForward'
+            }));
+            dogDiv.append($('<button>', {
+                class: 'locateDog',
+                text: 'Locate',
+                value: i
+            }));
+            $('#apiDiv').append(dogDiv);
         }
         getShelterId();
     })
@@ -145,9 +148,8 @@ function getShelterId() {
 function initialize() {
     //Add the event listener after Google Maps and window is loaded. Once the user clicks on the button, then google maps will be visible on the screen.
     $('#apiDiv').on('click', '.locateDog', function () {
+        $('#map-canvas').addClass('map');
         var buttonVal = $(this).attr('value');
-        console.log(buttonVal);
-        console.log(shelterInfo);
         var mapOptions = {
             center: { lat: 37.09024, lng:  -95.712891 },
             zoom: 3
@@ -177,5 +179,4 @@ function initialize() {
 };
 
 google.maps.event.addDomListener(window, 'load', initialize);
-// Initialize Firebase
 
